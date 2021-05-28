@@ -1,6 +1,6 @@
-import { combineReducers } from "redux";
-import { userReducer } from "./userReducer";
-import { todoReducer } from "./todoReducer";
+import {combineReducers} from "redux";
+import {userReducer} from "./userReducer";
+import {todoReducer} from "./todoReducer";
 
 
 export const rootReducer = combineReducers({
@@ -8,29 +8,4 @@ export const rootReducer = combineReducers({
     todo: todoReducer
 })
 
-
-export RootState = ReturnType<typeof rootReducer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export type RootState = ReturnType<typeof rootReducer>
